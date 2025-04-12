@@ -1,0 +1,45 @@
+{
+  "name": "transparencia-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@metamask/providers": "^21.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "@truffle/hdwallet": "^0.1.4",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "alchemy-sdk": "^3.5.5",
+    "ethers": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "solc": "^0.8.20",
+    "vite": "6.2.3",
+    "ws": "^8.18.1"
+  },
+  "scripts": {
+    "prestart": "node ../sync-env.js",
+    "start": "react-scripts start",
+    "prebuild": "node ../sync-env.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sync-env": "node ../sync-env.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

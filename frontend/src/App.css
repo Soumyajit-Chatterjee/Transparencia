@@ -1,0 +1,114 @@
+/* Existing Styles (Keep these) */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New Contract Connection Styles (Add these) */
+.contract-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.loading-screen {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.error-screen {
+  padding: 2rem;
+  margin: 2rem 0;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #ff6b6b;
+}
+
+.debug-info {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.retry-button {
+  padding: 0.75rem 1.5rem;
+  background: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.retry-button:hover {
+  background: #4fa8d3;
+  transform: translateY(-2px);
+}
+
+.connection-spinner {
+  border: 4px solid rgba(97, 218, 251, 0.2);
+  border-radius: 50%;
+  border-top: 4px solid #61dafb;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contract-container {
+    padding: 15px;
+    margin: 1rem;
+  }
+
+  .App-header {
+    padding: 20px;
+  }
+}
